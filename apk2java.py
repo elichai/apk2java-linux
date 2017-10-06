@@ -186,7 +186,7 @@ def main():
                     if options.smali == False and options.nosc == False:
                         dex2jar()
                         procyon()
-                call(["cp", tmp + project_name + "/", "./", "-R"])
+                call(["cp", outdir + project_name + "/", "./", "-R"])
             else:
                 print("[ ERROR ] You must select a valid APK file!")
                 exit(1)
